@@ -6,3 +6,10 @@ Question 1c
 2C
 	Lads_Kc has the smallest number of features (412)
 	fbGenes has the highest number of features (30718)
+
+3B
+	cut -f 1 fbgenes.bed | sort | uniq -c > fbgenes.info
+
+3C
+	ChrM has the smallest number of features at 13
+	Chr3R has the largest number of features at 7246	
