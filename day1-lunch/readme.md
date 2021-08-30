@@ -13,3 +13,9 @@ Question 1c
 3C
 	ChrM has the smallest number of features at 13
 	Chr3R has the largest number of features at 7246	
+
+4C
+	bedtools intersect -wb -a K9me3.bed -b *.bed | cut -f 1 | uniq -c > chr-with-fbgenes-k9.txt
+4D
+	ChrY has the lowest number of overlapping features at 36
+	ChrX has the highest number of overlapping features at 6387
