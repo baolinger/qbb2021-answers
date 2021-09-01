@@ -5,7 +5,7 @@ Question 1c
 	wc -l *.bed > feature_count.txt
 2C
 	Lads_Kc has the smallest number of features (412)
-	fbGenes has the highest number of features (30718)
+	fbGenes has the highest number of features, meaning that this it contains the most genes (30718)
 
 3B
 	cut -f 1 fbgenes.bed | sort | uniq -c > fbgenes.info
@@ -15,7 +15,7 @@ Question 1c
 	Chr3R has the largest number of features at 7246	
 
 4C
-	bedtools intersect -wb -a K9me3.bed -b *.bed | cut -f 1 | uniq -c > chr-with-fbgenes-k9.txt
+	bedtools intersect -wb -a K9me3.bed -b fbgenes.bed | cut -f 1 | uniq -c > chr-with-fbgenes-k9.txt
 4D
 	ChrY has the lowest number of overlapping features at 36
 	ChrX has the highest number of overlapping features at 6387
