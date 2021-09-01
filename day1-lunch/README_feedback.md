@@ -1,0 +1,3 @@
+This is almost entirely correct! Just a couple of small things:
+1. When reporting biological context for these files, your observations aren't wrong, but you could provide more context. You say that `fbgenes.bed	` has the most features but what is the significance of that?
+2. For Question 4C, your current bedtools command is `bedtools intersect -wb -a K9me3.bed -b *.bed`. When you have `-b *.bed`, this means that you may be searching for intersections between `K9me3.bed` and allll the other bed files in your directory. You should just be interested in intersecting with one of those files.
