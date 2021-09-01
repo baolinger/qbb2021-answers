@@ -1,0 +1,3 @@
+Closest gene: ('"tin"', 21378977, 21381970)
+Linear Gen Dist: 27
+Iterations: 12
