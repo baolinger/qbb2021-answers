@@ -1,0 +1,2 @@
+This looks really great! The only thing you might want to take a closer look at is how your script is handling the header line in the ctab file. Ideally, we either want to print the header line "as is" for both cases, or skip it for both cases.
+As of right now, when you do not include a third argument, it skips the header line, and if you do include a third argument, it includes the header line but it replaces the 8th field with "missing", which we don't want.
