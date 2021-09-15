@@ -1,6 +1,10 @@
+#added line 7, 26, 27 based on feedback
+
 import sys
 target = sys.argv[1]
 query = sys.argv[2]
+#add this line based on feedback; add additional command line argument for kmer size
+kmer_size = sys.argv[3]
 
 from fasta_reader import FASTAReader
 
@@ -19,6 +23,8 @@ kmers = {}
 
 #set kmer size
 k = 11
+#added this from feedback; set kmer size to command line supplied command
+k = open(kmer_size)
 
 #create dictionary that will determine all kmers in 
 #target sequence and their locations
