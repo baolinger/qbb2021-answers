@@ -1,0 +1,3 @@
+This looks good! A few things: when you're initializing the first row and column of the F_matrix, it looks like you're assuming the gap will be negative, whereas when you're actually filling in the F_matrix, it looks like your assuming the gap variable is positive, and you're subtracting this. So your scores are definitely going to be slightly off (-0.1). Also make sure you initialize the first row and column of the traceback matrix (-0.1). I also think you might be inadvertently be grabbing the alignment score from the cell one up and to the left of the bottom right of the F_matrix. Your alignment is also slightly different from mine, I suspect because you're decrementing your seq_counters before updating the two alignments, rather than after (-0.1)
+
+4.7/5
